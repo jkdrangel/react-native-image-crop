@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import {
 	View,
 	Image,
+	ImageBackground,
 	StyleSheet,
 	ImageEditor,
 	PanResponder,
@@ -341,7 +342,7 @@ class ImageCrop extends Component {
 						}),
 					}]}
 				>
-					<Image
+					<ImageBackground
 						resizeMode="cover"
 						source={this.props.source}
 						style={[styles.image, {
@@ -362,7 +363,7 @@ class ImageCrop extends Component {
 								backgroundColor: (isLower) ? 'rgba(0, 0, 0, 0.5)' : 'transparent',
 							}} />
 						)}
-					</Image>
+					</ImageBackground>
 				</View>
 			);
 		}
