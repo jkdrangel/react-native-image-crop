@@ -6,7 +6,7 @@ Image crop editor component for iOS and Android. Move the image in the area and 
 
 ## Installation
 
-This component is dependent of `react-native-image-resizer` [(See Github)](https://github.com/bamlab/react-native-image-resizer) which needs to be installed and linked to your project before.
+This component is dependent of  `react-native-image-editor` [(See Github)](https://github.com/react-native-community/react-native-image-editor) `react-native-image-resizer` [(See Github)](https://github.com/bamlab/react-native-image-resizer) which needs to be installed and linked to your project before.
 
 If you don't have `rnpm` installed on your computer, install it first:
 
