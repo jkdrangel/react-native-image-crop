@@ -1,4 +1,4 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
 import {
 	View,
 	Image,
@@ -6,6 +6,7 @@ import {
 	PanResponder,
 } from 'react-native';
 import ImageEditor from "@react-native-community/image-editor";
+import PropTypes from 'prop-types';
 
 import ImageResizer from 'react-native-image-resizer';
 
