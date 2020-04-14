@@ -292,21 +292,18 @@ class ImageCrop extends Component {
 		};
 
 		return new Promise((resolve, reject) => {
+			const { cropWidth, cropHeight } = this.props;
 			ImageEditor.cropImage(
 				this.props.source.uri,
-				cropData,
-				(croppedUri) => {
-					const { cropWidth, cropHeight } = this.props;
+				cropData).then((uri)=>{
 					this.resize(
-						croppedUri,
+						uri,
 						(cropWidth || cropData.size.width),
 						(cropHeight || cropData.size.height)
 					).then((resizedUri) =>
 						resolve(resizedUri)
 					);
-				},
-				(failure) => reject(failure)
-			);
+				}).catch(error=>reject(error))
 		});
 	}
 
