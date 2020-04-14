@@ -3,9 +3,9 @@ import {
 	View,
 	Image,
 	StyleSheet,
-	ImageEditor,
 	PanResponder,
 } from 'react-native';
+import ImageEditor from "@react-native-community/image-editor";
 
 import ImageResizer from 'react-native-image-resizer';
 
